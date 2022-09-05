@@ -76,10 +76,10 @@ function generateReadme(data) {
   ## Questions
   If you have any questions about this projects, please feel free to contact me directly.
 
-    ### ${data.name}
-    #### email: ${data.email}
-  
-    You can view more of my projects at https://github.com/${data.github}.
+  > ### ${data.name}
+  > #### email: ${data.email}
+
+  You can view more of my projects at https://github.com/${data.github}.
 `;
 }
 
