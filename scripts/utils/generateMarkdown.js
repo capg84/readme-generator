@@ -1,51 +1,51 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// declaring the global variables
 let licenseBadge = "";
 let licenseLink = "";
 let licenseSection = "";
 
+// function that returns a license badge based on which license is passed in
+// If there is no license, generating the no license required badge
 function renderLicenseBadge(license) {
-  // let licenseBadge = "";
-  //No licence required https://img.shields.io/badge/licence-no%20licence%20required-yellow
-  if (license === "No licence required") {
-    licenseBadge = `![License](https://img.shields.io/badge/licence-no%20licence%20required-yellow)`;
+  if (license === "No license required") {
+    licenseBadge = `![Github License](https://img.shields.io/badge/licence-no%20licence%20required-yellow)`;
   } else  {
-    licenseBadge = `![License](http://img.shields.io/badge/license-${license}-blue.svg)`;
+    licenseBadge = `![Github License](https://img.shields.io/badge/license-${license}-blue.svg)`;
   }
   return licenseBadge;
 }
 
 // TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// If there is no license, returning an empty string
 function renderLicenseLink(license) {
-  let licenseLink = `* [License](#license)`;
+  licenseLink = `* [License](#license)`;
 
-  if (license === "None") {
+  if (license === "No license required") {
     licenseLink = "";
   }
   return licenseLink;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// function that returns the license section of README
+// If there is no license, returning an empty string
 function renderLicenseSection(license) {
-  let licenseSection = `${license} `;
+  licenseSection = `## License
+  ${licenseBadge} `;
 
-  if (license === "None") {
+  if (license === "No license required") {
     licenseSection = "";
   }
   return licenseSection;
 }
 
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateReadme(data) {
-  renderLicenseBadge();
-  renderLicenseLink();
-  renderLicenseSection();
+  renderLicenseBadge(data.license);
+  renderLicenseLink(data.license);
+  renderLicenseSection(data.license);
   console.log(data.license);
   return `# ${data.title}
   
-  ![Github licence](${licenseBadge})
+  ${licenseBadge}
 
   
   ## Description 
@@ -54,7 +54,7 @@ function generateReadme(data) {
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
+  ${licenseLink}
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -65,8 +65,7 @@ function generateReadme(data) {
   ## Usage 
   ${data.usage}
 
-  ## License 
-  ${renderLicenseSection}
+  ${licenseSection}
 
   ## Contributing 
   ${data.contributors}

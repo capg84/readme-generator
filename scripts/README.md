@@ -1,10 +1,10 @@
-# vbmn.xlkja
+# nai
   
-  ![Github licence](![License](http://img.shields.io/badge/license-undefined-blue.svg))
+  ![Github License](https://img.shields.io/badge/license-GNU-blue.svg)
 
   
   ## Description 
-  aeirgj
+  komuna
 
   ## Table of Contents
   * [Installation](#installation)
@@ -15,26 +15,19 @@
   * [Questions](#questions)
   
   ## Installation 
-  sfgjjkk
+  nai
 
   ## Usage 
-  ertqetq
+  janina
 
-  ## License 
-  function renderLicenseSection(license) {
-  let licenseSection = `${license} `;
-
-  if (license === "None") {
-    licenseSection = "";
-  }
-  return licenseSection;
-}
+  ## License
+  ![Github License](https://img.shields.io/badge/license-GNU-blue.svg) 
 
   ## Contributing 
-  erwwwjj
+  nope
 
   ## Tests
-  xfvsfhqw5y
+  komuna
 
   ## Questions
-  If you have any questions about this projects, please contact me directly at qirtqpt. You can view more of my projects at https://github.com/ajkdhgakfhdg.
+  If you have any questions about this projects, please contact me directly at dimuna. You can view more of my projects at https://github.com/capg84.
