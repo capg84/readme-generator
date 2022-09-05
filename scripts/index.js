@@ -10,17 +10,30 @@ const questions = () => {
   return inquirer.prompt([
   {
       type: 'input',
-      name: 'github',
-      message: 'What is your GitHub username?',
+      name: 'name',
+      message: 'What is your full name?',
       validate: nameInput => {
           if (nameInput) {
               return true;
           } else {
-              console.log('Please enter your GitHub username.');
+              console.log('Please enter your full name.');
               return false; 
           }
       } 
   },
+  {
+    type: 'input',
+    name: 'github',
+    message: 'What is your GitHub username?',
+    validate: nameInput => {
+        if (nameInput) {
+            return true;
+        } else {
+            console.log('Please enter your GitHub username.');
+            return false; 
+        }
+    } 
+  }, 
   {
       type: 'input',
       name: 'email',
@@ -38,7 +51,7 @@ const questions = () => {
   {
       type: 'input',
       name: 'title',
-      message: 'What is your project name?',
+      message: 'What is your projects name?',
       validate: nameInput => {
           if (nameInput) {
               return true;
@@ -71,7 +84,7 @@ const questions = () => {
           if (nameInput) {
               return true;
           } else {
-              console.log('Please use the choose a license!');
+              console.log('Please use the up/down arrow keys of the keyboard to choose a license!');
               return false; 
           }
       }
@@ -127,7 +140,7 @@ const writeFile = data => {
             return;
         // when the README has been created 
         } else {
-            console.log("Your README has been successfully created!")
+            console.log("Your README is successfully created!")
         }
     })
 }; 

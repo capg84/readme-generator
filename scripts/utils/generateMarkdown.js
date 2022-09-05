@@ -74,7 +74,12 @@ function generateReadme(data) {
   ${data.test}
 
   ## Questions
-  If you have any questions about this projects, please contact me directly at ${data.email}. You can view more of my projects at https://github.com/${data.github}.
+  If you have any questions about this projects, please feel free to contact me directly.
+
+    ### ${data.name}
+    #### email: ${data.email}
+  
+    You can view more of my projects at https://github.com/${data.github}.
 `;
 }
 
