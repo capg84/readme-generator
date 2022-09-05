@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Professional Readme Generator
   
   ![Github License](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -5,16 +6,26 @@
   
   ## Description 
   This is a command-line application that dynamically generate professional readme file from a user’s input.
+=======
+# zyx
+  
+  ![Github License](https://img.shields.io/badge/licence-no%20licence%20required-yellow)
+
+  
+  ## Description 
+  abcdefj
+>>>>>>> 7a9a62cd93f4640d242f972563199a1412c638a5
 
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
+  
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
   
   ## Installation 
+<<<<<<< HEAD
   The application can be cloned from GitHub. Once cloned, the user needs to ensure that all node.js related packages are installed appropriately. If not, the user needs to install the related packages including inquirer version 6.3.1.
 
   ## Usage 
@@ -36,3 +47,20 @@
     #### email: cyprian.gomes@live.co.uk
   
     You can view more of my projects at https://github.com/capg84.
+=======
+  1234
+
+  ## Usage 
+  0987
+
+  
+
+  ## Contributing 
+  8765
+
+  ## Tests
+  123
+
+  ## Questions
+  If you have any questions about this projects, please contact me directly at cyprian.gomes@live.co.uk. You can view more of my projects at https://github.com/capg84.
+>>>>>>> 7a9a62cd93f4640d242f972563199a1412c638a5
